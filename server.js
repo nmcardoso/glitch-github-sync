@@ -30,7 +30,7 @@ app.post('/git', verifySignature, (req, res) => {
       if (err) return console.log(err)
       console.log(data)
       cmd.run('refresh')
-      return res.sendStatus(200).send(data)
+      return res.status(200).send(data)
     })
   }
 })
