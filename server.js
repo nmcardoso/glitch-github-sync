@@ -19,10 +19,6 @@ const verifySignature = (req, res, next) => {
   return next()
 }
 
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/views/index.html')
-})
-
 // Github webhook listener
 app.post('/git', verifySignature, (req, res) => {
   if (req.headers['x-github-event'] == 'push') {
@@ -33,6 +29,10 @@ app.post('/git', verifySignature, (req, res) => {
       return res.status(200).send(data)
     })
   }
+})
+
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/views/index.html')
 })
 
 app.listen(process.env.PORT, () => {
