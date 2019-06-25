@@ -1,0 +1,15 @@
+{
+  "name": "glitch-github-sync",
+  "version": "1.0.0",
+  "description": "Glitch Github Sync",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Natanael",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-cmd": "^3.0.0"
+  }
+}
