@@ -9,6 +9,7 @@
 1. **New Glitch project**
   
     Create new Glitch project based on forked github repo url.
+    
     ![New Glitch Project](https://i.imgur.com/JnvKxkW.png)
 
 1. **Setup .env file**
