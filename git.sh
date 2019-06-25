@@ -28,3 +28,6 @@ git reset --hard origin/master
 
 # force pull
 git pull origin master --force
+
+# sucess message
+echo "[GIT] Updated with origin/master"
