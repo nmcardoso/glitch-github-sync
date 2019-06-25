@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 })
 
 // Github webhook listener
-app.get('/git', (req, res) => {
+app.post('/git', (req, res) => {
   cmd.get('bash git.sh', (err, data) => {
     if (err) return console.log(err)
     console.log(data)
