@@ -47,3 +47,15 @@ Export your Glitch repository to Github. This will add a new _glitch_ branch on 
 1. **All done**
   
     Now, on your local repo, make a change in code and push to github. The glitch project will be updated automatically.
+
+### Working sample
+
+<!-- blank line -->
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true">
+    <source src="https://i.imgur.com/K4vbdnP.mp4" type="video/mp4">
+  </video>
+</figure>
+<!-- blank line -->
+
+[![Sample](https://i.imgur.com/S8FtqaW.gif)](https://imgur.com/K4vbdnP)
