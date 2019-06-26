@@ -14,8 +14,8 @@
 
 1. **Setup .env file**
   
-    On Glitch project, create a .env file with the following keys: `GITHUB_URL` and `GITHUB_SECRET`.
-    
+    On Glitch project, create a .env file with the following keys: `GITHUB_URL` and `GITHUB_SECRET`. To generate your `GITHUB_SECRET` you can use a tool like [this](https://randomkeygen.com/).
+
     ![Setup .env file](https://i.imgur.com/FHICVo4.png)
 
 1. **Setup Webhook**
