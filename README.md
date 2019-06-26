@@ -1,5 +1,21 @@
 ## Glitch Github Sync
 
+### Introduction
+
+The main ideia of this project is develop your Glitch project using your prefered development tools (code editor, plugins, etc) with a code versioning (git).
+
+### How it works
+
+The sync works in both ways, but the default is **Github -> Glitch**.
+
+#### Sync Github -> Glitch
+
+Just make a `git push` to Github repository. The Glitch repository will be updated automaticaly.
+
+#### Sync Glitch -> Github
+
+Export your Glitch repository to Github. This will add a new _glitch_ branch on your Github repository. Then, merge _glitch branch_ to _master_.
+
 ### Instructions
 
 1. **Copy this repo**
