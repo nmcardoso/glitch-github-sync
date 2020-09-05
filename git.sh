@@ -28,3 +28,6 @@ git reset --hard origin/master
 
 # force pull
 git pull origin master --force
+
+# refresh the editor
+refresh
