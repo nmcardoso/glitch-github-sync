@@ -25,7 +25,6 @@ app.post('/git', verifySignature, (req, res) => {
     cmd.get('bash git.sh', (err, data) => {
       if (err) return console.log(err)
       console.log(data)
-      cmd.run('refresh')
       return res.status(200).send(data)
     })
   } else if (req.headers['x-github-event'] == 'ping') {
