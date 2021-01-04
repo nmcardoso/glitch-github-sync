@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# This file sets up github --> glitch sync
+
 if [ -z "$GITHUB_URL" ]; then
   echo "Define GITHUB_URL in .env file"
   exit 0

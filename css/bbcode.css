@@ -1,0 +1,89 @@
+a, b, cite {
+	font-weight: bold;
+}
+
+.big {
+	font-size: 17px;
+}
+
+small {
+	font-size: 10px;
+}
+
+a {
+	color: #4d97ff;
+	text-decoration: none;
+	text-shadow: none;
+}
+
+img {
+	max-width: 100%;
+	border: 0;
+}
+
+img, ul, ol, cite, pre.blocks {
+	padding: 0;
+}
+
+img, cite {
+	margin: 0;
+}
+
+i {
+	font-style: italic;
+}
+
+a:hover, u {
+	text-decoration: underline;
+}
+
+s {
+	text-decoration: line-through;
+}
+
+img, ul, ol, blockquote {
+	font-weight: normal;
+}
+
+img, ul, ol, blockquote, pre.blocks {
+	list-style: none;
+}
+
+ul, ol, blockquote, pre:not(.no) {
+	margin: 12px 0;
+}
+
+li {
+	list-style-type: disc;
+	margin: 0 0 0 32px;
+}
+
+blockquote, pre:not(.no) {
+	border-color: #ccc;
+	background-color: #f7f7f7;
+	padding: 12px 20px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+cite {
+	line-height: 1.4;
+	margin-bottom: 6px;
+	font-style: normal;
+	display: block;
+}
+
+pre.blocks {
+	font: bold 10px/1 "Lucida Grande", Verdana, Arial, "DejaVu Sans", sans-serif;
+	margin: 0 0 3px;
+	position: relative;
+}
+
+pre:not(.no) {
+	font-size: 0.9em;
+	font-family: Menlo, Monaco, Consolas, "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+	color: #000;
+	background: #fff;
+	max-height: 450px;
+	overflow: auto;
+}

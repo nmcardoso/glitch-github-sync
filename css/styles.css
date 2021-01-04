@@ -1,0 +1,105 @@
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-nav {
+  overflow: hidden;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  position: unset;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  background-color: inherit;
+}
+
+.navbar-nav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: var(--hover);
+  border-radius: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #235ba9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 #00000033;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #387ad6;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+form.search {
+  right: 16px;
+  position: fixed;
+}
+
+nav {
+  background: var(--primary);
+}
+
+:root {
+  --primary: #1B4885;
+  --hover: #153666;
+}
+
+.search button {
+  border: 2.5px solid var(--hover) !important;
+  color: #ffffffbf;
+}
+
+.search button:hover,
+.search button:active {
+  background-color: var(--hover) !important;
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem var(--hover);
+}
+
+main > .container {
+  margin: 3rem auto;
+}
+
+img.banner {
+  width: 100%;
+}
