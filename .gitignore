@@ -4,3 +4,7 @@ node_modules
 .data
 .mysql
 .nano
+.gitignore
+.glitch-assets
+glitch.json
+lamp-start.sh
