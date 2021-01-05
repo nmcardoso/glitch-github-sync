@@ -3,3 +3,4 @@ node_modules
 .apache2
 .data
 .mysql
+.nano

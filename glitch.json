@@ -1,4 +1,4 @@
 {
-  "install": "echo 'This file tells Glitch to calls a Bash script that calls PHP. (i think) i don't really understand it, i don't usually have to do this, but i guess you have to in glitch';",
-  "start": "bash lamp-start.sh"
+	"install": "echo 'This file tells Glitch to calls a Bash script that calls PHP.';",
+	"start": "bash lamp-start.sh"
 }
