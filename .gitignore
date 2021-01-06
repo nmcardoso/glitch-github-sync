@@ -8,3 +8,7 @@ glitch.json
 lamp-start.sh
 .git
 .mysql-history
+.gitignore
+.github
+php.ini
+.htaccess
