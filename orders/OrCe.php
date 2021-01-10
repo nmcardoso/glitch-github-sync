@@ -18,6 +18,6 @@
 	});	
 </script>
 <!-- code blocks css -->
-<link rel="stylesheet" href="../css/pygments.css">
+<link rel="stylesheet" href="https://cdn.scratch.mit.edu/scratchr2/static/__f4f5f6fe9f78c5d67e8f699f71f746dd__//djangobb_forum/css/pygments.css">
 <!-- bbcode css -->
 <link rel="stylesheet" href="../css/bbcode.css">
