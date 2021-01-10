@@ -6,24 +6,27 @@
 
 <!--Get contents of OrCe from forum-->
 <script>
-	fetch("https://scratchdb.lefty.one/v2/forum/post/4594238").then(response => response.text()).then(html => { //get the post content
-		var OrCe = JSON.parse(html).content.bb; //get only the bbcode
+	fetch("https://scratch.mit.edu/discuss/post/4594238/source/").then(response => response.json()).then(json => { //get the post content
+		let OrCe = json.content.bb; //get only the html
+		let OrCeDiv = document.createElement("div");
+                OrCeDiv.innerHTML = bbcodeParser.bbcodeToHtml(OrCe); //convert bbcode to html. in future, will output to page instead of console
 		//future: add [] escape code, emojis, and ordered lists
-		console.log(bbcodeParser.bbcodeToHtml(OrCe)) //convert bbcode to html. in future, will output to page instead of console
-	});
+                document.body.appendChild(OrCeDiv);
+        });
 </script>
 
-<!--Create scratchblocks in case they are used in an order form - line 13: call parser file. line 14: call scratchblock styles file. lines 15-19: set parser settings-->
-<script src="https://scratchblocks.github.io/js/scratchblocks-v3.4-min.js"></script>
-<link rel="stylesheet" src="/scratchblocks.css">
-<script>
-	scratchblocks.renderMatching('pre.blocks', {
-		style: 'scratch3', //Optional, defaults to 'scratch2'.
-		languages: ['en'], //Optional, defaults to ['en'].
-		inline: false, //Optional, defaults to false.
-	});
+<!--Create scratchblocks in case they are used in an order form - line 13: call parser file. line 14: call scratchblock styles file. lines 15-19: set parser settings-->	
+<script src="https://scratchblocks.github.io/js/scratchblocks-v3.4-min.js"></script>	
+<link rel="stylesheet" href="../css/scratchblocks.css">	
+<script>	
+	scratchblocks.renderMatching('pre.blocks', {	
+		style: 'scratch3', //Optional, defaults to 'scratch2'.	
+		languages: ['en'], //Optional, defaults to ['en'].	
+		inline: false, //Optional, defaults to false.	
+	});	
 </script>
 
-<!--Add code sintax highlighighlighting in case it is used in an order form - line 22: call parser file. line 23: call styles file-->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.2/build/styles/github-gist.min.css">
-<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.2/build/highlight.min.js"></script>
+<!-- code blocks css -->
+<link rel="stylesheet" href="https://cdn.scratch.mit.edu/scratchr2/static/__f4f5f6fe9f78c5d67e8f699f71f746dd__//djangobb_forum/css/pygments.css">
+<!-- bbcode css -->
+<link rel="stylesheet" href="../css/bbcode.css">
