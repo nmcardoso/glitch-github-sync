@@ -1,12 +1,12 @@
-a, b, cite {
+a, .bb-bold, p.bb-quote-author {
 	font-weight: bold;
 }
 
-.big {
+.bb-big {
 	font-size: 17px;
 }
 
-small {
+.bb-small {
 	font-size: 10px;
 }
 
@@ -21,23 +21,23 @@ img {
 	border: 0;
 }
 
-img, ul, ol, cite, pre.blocks {
+img, ul, ol, p.bb-quote-author, pre.blocks {
 	padding: 0;
 }
 
-img, cite {
+img, p.bb-quote-author {
 	margin: 0;
 }
 
-i {
+.bb-italic {
 	font-style: italic;
 }
 
-a:hover, u {
+a:hover, .bb-underline {
 	text-decoration: underline;
 }
 
-s {
+.bb-strikethrough {
 	text-decoration: line-through;
 }
 
@@ -66,7 +66,7 @@ blockquote, pre:not(.no) {
 	border-width: 1px;
 }
 
-cite {
+p.bb-quote-author {
 	line-height: 1.4;
 	margin-bottom: 6px;
 	font-style: normal;
